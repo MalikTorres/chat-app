@@ -16,14 +16,14 @@ This application implements socket server functionality with the chat open ai to
 
 ### Collaborators
 
-We built out the functionalities of this application with the help of sites such as [Medium](https://medium.com/codingthesmartway-com-blog/build-a-complete-context-aware-ai-chatbot-web-app-with-node-js-socket-io-and-gpt-4-api-916cab298769), and referenced demo code provided by Ryan Gallaway.
+We built out the functionalities of this application with the help of sites such as [Medium](https://medium.com/codingthesmartway-com-blog/build-a-complete-context-aware-ai-chatbot-web-app-with-node-js-socket-io-and-gpt-4-api-916cab298769),[openAI](https://platform.openai.com/docs/guides/gpt-best-practices/six-strategies-for-getting-better-results) documentation, and referenced demo code provided by Ryan Gallaway.
 
 ### Setup
 
 Install:
 
 1. `npm init -y`
-2. `npm install express socket.io openai`
+2. `npm install express socket.io socket.io-client openai`
 2.  Create `env` file
 3.  Receive api key from Openai(https://openai.com/)
 
