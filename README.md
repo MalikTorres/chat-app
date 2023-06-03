@@ -1,43 +1,51 @@
-# package.json Notes
+# LAB - Class 14
 
-## For React Applications
+## Project: Chat Application
 
-To deploy your application at GitHub pages, you'll need to add a home page property to your package.json which points to the deployed base URL of your GitHub Pages site.
+### Author: Heather Holocomb and Malik Sadiki-Torres
 
-*NOTE: This will break deployments to other hosting services such as Netlify, Vercel, or AWS Amplify, so if you later wish to deploy there, remove this property completely.*
+### Problem Domain
 
-```json
-{
-  "homepage": "https://yourname.github.io/repository-name"
-}
-```
+This application implements socket server functionality with the chat open ai to function that allows the user to interact with a chatbot.
 
-## Node / Express Applications
+### Links and Resources
 
-### For Tests
+- [GitHub Actions ci/cd]()
+- [back-end server]()
 
-Your scripts section should have the following, so that you can easily run tests locally and in your CI.
 
-```json
-  "scripts": {
-    "start": "node index.js",
-    "test": "jest --verbose --coverage",
-    "test-watch": "jest --watchAll --verbose --coverage",
-    "init:config": "sequelize init:config",
-    "db:create": "sequelize db:create"
-},
-```
+### Collaborators
 
-### For NPM Modules
+We built out the functionalities of this application with the help of sites such as [Medium](https://medium.com/codingthesmartway-com-blog/build-a-complete-context-aware-ai-chatbot-web-app-with-node-js-socket-io-and-gpt-4-api-916cab298769), and referenced demo code provided by Ryan Gallaway.
 
-If you are creating a module to deploy at NPM, you'll want a "bin" section that identifies the name of the global command to run and your .js file that runs when called.
+### Setup
 
-```json
-"bin": {
-    "fetch": "index.js"
-}
-```
+Install:
 
-Additionally, that file should have as it's first line, so that it'll run without having to type "node filename.js" every time
+1. `npm init -y`
+2. Create `env` file
+3. Receive api key from Openai(https://openai.com/)
 
-`#!/usr/bin/env node`
+
+#### `.env` requirements (where applicable)
+
+port variable exists within the env sample
+
+
+#### How to initialize/run your application (where applicable)
+
+clone repo, `npm i` to install the required dependencies to run this application
+
+
+#### Routes
+
+Test with your localhost port
+
+#### Tests
+
+to run tests, after running `npm i`, run the command `npm test`
+
+#### UML
+
+![UML image](./assets/)
+
