@@ -23,8 +23,9 @@ We built out the functionalities of this application with the help of sites such
 Install:
 
 1. `npm init -y`
-2. Create `env` file
-3. Receive api key from Openai(https://openai.com/)
+2. `npm install express socket.io openai`
+2.  Create `env` file
+3.  Receive api key from Openai(https://openai.com/)
 
 
 #### `.env` requirements (where applicable)
