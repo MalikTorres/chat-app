@@ -5,18 +5,16 @@ const express = require('express');
 const http = require('http');
 const socketIO = require('socket.io');
 const { Configuration, OpenAIApi } = require('openai');
-
+const PORT = process.env.PORT || 3002;
 
 const app = express();
 const server = http.createServer(app);
-// const io = socketIO(server);
 const io = require('socket.io')(server, {
   cors: {
     origin: 'http://127.0.0.1:5501',
     methods: ['GET', 'POST'],
   },
 });
-const PORT = process.env.PORT || 3002;
 
 // OpenAI Configuration
 const configuration = new Configuration({
