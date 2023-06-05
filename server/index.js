@@ -12,9 +12,9 @@ const server = http.createServer(app);
 // const io = socketIO(server);
 const io = require('socket.io')(server, {
   cors: {
-    origin: "http://127.0.0.1:5501",
-    methods: ["GET", "POST"]
-  }
+    origin: 'http://127.0.0.1:5501',
+    methods: ['GET', 'POST'],
+  },
 });
 const PORT = process.env.PORT || 3002;
 
