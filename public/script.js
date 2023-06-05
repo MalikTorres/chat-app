@@ -1,7 +1,6 @@
 // public/script.js
 // Socket instance created
-// const { io } = require('socket.io-client');
-const socket = io();
+const socket = io('http://localhost:3001');
 
 // Requiring DOM elements
 const messageForm = document.getElementById('message-form');
@@ -13,7 +12,7 @@ function displayMessage(role, message) {
   div.innerHTML = `<p><b> ${role === 'user' ? 'You' : 'Assistant'
   }: </b> ${message} </p>`;
   messages.appendChild(div);
-  messages.scropTop = messages.scrollHeight;
+  messages.scrollTop = messages.scrollHeight;
 }
 
 messageForm.addEventListener('submit', (e) => {
@@ -34,5 +33,5 @@ messageForm.addEventListener('submit', (e) => {
 });
 
 socket.on('message', (message) => {
-  displayMessage('assitant', message);
+  displayMessage('assistant', message);
 });
