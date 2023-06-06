@@ -16,7 +16,7 @@ This application implements socket server functionality with the chat open ai to
 
 ### Collaborators
 
-We built out the functionalities of this application with the help of sites such as [Medium](https://medium.com/codingthesmartway-com-blog/build-a-complete-context-aware-ai-chatbot-web-app-with-node-js-socket-io-and-gpt-4-api-916cab298769),[openAI](https://platform.openai.com/docs/guides/gpt-best-practices/six-strategies-for-getting-better-results) documentation, and referenced demo code provided by Ryan Gallaway. To debug CORS issue, referenced the [Socket.io Docs](https://socket.io/docs/v4/handling-cors/) that specifically addresses how to handle CORS configuration.
+We built out the functionalities of this application with the help of sites such as [Medium](https://medium.com/codingthesmartway-com-blog/build-a-complete-context-aware-ai-chatbot-web-app-with-node-js-socket-io-and-gpt-4-api-916cab298769),[openAI](https://platform.openai.com/docs/guides/gpt-best-practices/six-strategies-for-getting-better-results) documentation, and referenced demo code provided by Ryan Gallaway. To debug CORS issue, referenced the [Socket.io Docs](https://socket.io/docs/v4/handling-cors/) that specifically addresses how to handle CORS configuration. Used AI to help with testing. 
 
 ### Setup
 
